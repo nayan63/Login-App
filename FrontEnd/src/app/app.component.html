@@ -1,0 +1,26 @@
+<p>
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <div *ngIf="!buttonLogin; else elseBlock">
+      <span mat-icon-button class="example-icon favorite-icon">
+        Hello User
+      </span>
+      <a routerLink="login" mat-raised-button color="warn" class="login-button">
+        LOGIN
+      </a>
+    </div>
+    <ng-template #elseBlock>
+      <span mat-icon-button class="example-icon favorite-icon">
+        Hii, ABCD
+      </span>
+      <button type="button" (click)="logout()" mat-raised-button color="warn" class="login-button" >
+        LOGOUT
+      </button>
+    </ng-template>
+  </mat-toolbar>
+</p>
+<router-outlet></router-outlet>

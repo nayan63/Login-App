@@ -1,0 +1,21 @@
+.login-form
+{
+    color: whitesmoke;
+    margin: auto;
+    position: absolute;
+    top: 25%;
+    left: 34%;
+}
+.login-form mat-form-field,button
+{
+    width: 350px;
+}
+.login-form h2
+{
+    text-align: center;
+}
+
+.error
+{
+    color: crimson;
+}
